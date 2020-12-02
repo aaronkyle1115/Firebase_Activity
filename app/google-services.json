@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "359533950229",
+    "firebase_url": "https://demotest-9caea.firebaseio.com",
+    "project_id": "demotest-9caea",
+    "storage_bucket": "demotest-9caea.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:359533950229:android:c0db12a7550027c9ef251c",
+        "android_client_info": {
+          "package_name": "com.example.youtubechannels"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "359533950229-k3ifl8hoeepjpg1r6qds9rtqna14v8r6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAIBS0JqOed60ep-JtcDaPEt4-9CwN-DMI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "359533950229-k3ifl8hoeepjpg1r6qds9rtqna14v8r6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
