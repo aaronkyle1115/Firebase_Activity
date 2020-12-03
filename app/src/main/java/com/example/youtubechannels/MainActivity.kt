@@ -12,6 +12,9 @@ import com.example.youtubechannels.models.Video
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.ValueEventListener
+import java.util.*
+import kotlin.collections.ArrayList
+
 lateinit var editTitle : EditText
 lateinit var editRank : EditText
 lateinit var editURL : EditText
@@ -35,13 +38,17 @@ class MainActivity : AppCompatActivity() {
 
         videoHandler = VideoHandler()
 
-        videos = ArrayList()
+
         videoListView = findViewById(R.id.videoListView)
         btnOpt = findViewById(R.id.goAddbtn)
         btnOpt.setOnClickListener{
             startActivity(Intent(this, Adding::class.java))
         }
         registerForContextMenu(videoListView)
+        videoListView.onItemClickListener = AdapterView.OnItemClickListener{parent, view, position, id ->
+            videoUpdate = videos[position]
+            startActivity(Intent(this, viewInfo::class.java))
+        }
     }
 
     override fun onCreateContextMenu(menu: ContextMenu?, v: View?, menuInfo: ContextMenu.ContextMenuInfo?) {
@@ -88,6 +95,7 @@ class MainActivity : AppCompatActivity() {
                 val adapter = ArrayAdapter<Video>(applicationContext, android.R.layout.simple_list_item_1, videos)
                 videoListView.adapter = adapter
             }
+
 
 
         })

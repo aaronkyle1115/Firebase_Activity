@@ -13,20 +13,20 @@
         android:text="Add a Favorite"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.941" />
+        app:layout_constraintVertical_bias="0.887" />
 
     <ListView
         android:id="@+id/videoListView"
-        android:layout_width="331dp"
-        android:layout_height="499dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="323dp"
+        android:layout_height="378dp"
+        android:background="#E8E8E8"
+        app:layout_constraintBottom_toTopOf="@+id/goAddbtn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3"
-        app:layout_constraintVertical_bias="0.401" />
+        app:layout_constraintVertical_bias="0.443" />
 
     <TextView
         android:id="@+id/textView3"
